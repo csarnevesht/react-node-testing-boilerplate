@@ -1,0 +1,12 @@
+{
+  "name": "react-node-testing-boilerplate",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "concurrently \"npm run dev --prefix client\" \"npm run dev --prefix server\"",
+    "test": "concurrently \"npm test --prefix client\" \"npm test --prefix server\"",
+    "test:e2e": "npx playwright test"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.0"
+  }
+}
